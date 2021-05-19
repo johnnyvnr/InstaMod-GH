@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waving</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="../assets/images/camera.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+</head>
+<body>
+    <!--Barra de Navegação-->
+    <nav>
+        <div class="title">
+            <a href="">
+                <img class="imglogo" src="../assets/images/Untitled-1.png" alt="">
+            </a>
+        </div>
+        
+        <div class="searchbar">
+            <i class="fas fa-search fa-1x"></i>
+            <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+        <div class="icons" style= "font-size: 0.5rem;">
+            <a href="#"></a><i class="fas fa-home fa-4x"></i></a>
+            <a href="#"><i class="fab fa-facebook-messenger fa-4x"></i></a>
+            <a href="#"><i class="far fa-compass fa-4x"></i></a>
+            <a href="#"><i class="fas fa-user-circle fa-4x profile"></i> </a>
+        </div>
+    </nav>
+    <br/>
+    <div class="all">
+    <!--Feed-->
+        <main>
+            <!--Posts-->
+            <div class="post">
+                <div class="imgpost">
+                    <img src="../assets/images/ariprofile.jpg" alt="">
+                </div>
+
+                <div class="navpost">
+                    <div class="containerlike">
+                        <i id="btn" onclick="Toggle()" class="far fa-heart falike"></i>
+                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-comment-dots facomment"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="navpost">
+                    <img src="../assets/images/ariprofile.jpg" alt="">
+                    <p><strong>@arianagrande</strong> <i class="fas fa-certificate" style="color: rgb(0, 119, 255);"></i></p>
+                </div>
+                <div class="commentpost">
+                    <p>🤍</p>
+                </div>
+            </div>
+
+            <!--Post 2-->
+            <div class="post">
+                <div class="imgpost">
+                    <img src="../assets/images/theweeknd.jpg" alt="">
+                </div>
+
+                <div class="navpost">
+                    <div class="containerlike">
+                        <i id="btn" onclick="Toggle()" class="far fa-heart falike"></i>
+                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-comment-dots facomment"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="navpost">
+                    <img src="../assets/images/theweekprof.jpg" alt="">
+                    <p><strong>@theweeknd</strong> <i class="fas fa-certificate" style="color: rgb(0, 119, 255);"></i></p>
+                </div>
+                <div class="commentpost">
+                    <p>what a show!</p>
+                </div>
+            </div>
+
+            <!--Post 3-->
+            <div class="post">
+                <div class="imgpost">
+                    <img src="../assets/images/taylor.jpg" alt="">
+                </div>
+
+                <div class="navpost">
+                    <div class="containerlike">
+                        <i id="btn" onclick="Toggle()" class="far fa-heart falike"></i>
+                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-comment-dots facomment"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="navpost">
+                    <img src="../assets/images/tayprofile.jpg" alt="">
+                    <p><strong>@taylorswift</strong> <i class="fas fa-certificate" style="color: rgb(0, 119, 255);"></i></p>
+                </div>
+                <div class="commentpost">
+                    <p>1989 Taylor's Version coming!</p>
+                </div>
+            </div>
+        </main>
+
+        <!--Profile-->
+        <div class="profilebox">
+            <div class="profileplaceholder">
+                <img src="../assets/images/me.jpg" alt="">
+                <p><strong>@johnnyvn</strong></p>
+            </div> 
+            <hr>
+            <div class="mypostsbox">
+                <p><strong>Posts:</strong> 150</p>
+                <hr>
+                <p><strong>Following:</strong> 12</p>
+                <hr>
+                <p><strong>Followers:</strong> 230</p>
+            </div>        
+        </div>
+        
+    </div>    
+
+    <script src="../assets/js/index.js"></script>
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Space+Grotesk&display=swap');
+
+
+body{
+    margin: 0 auto;
+    font-family: 'Mulish', 'Space Grotesk', sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70rem;
+    border: 1px solid rgba(97, 97, 97, 0.699);
+    border-radius: 0 0 0.3rem 0.3rem;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 2.5rem !important;
+    padding: 0.4rem;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 30px #bebebe,
+             -20px -20px 60px #ffffff;
+
+}
+nav > img {
+    max-width: 3rem;
+    margin-left: 0.4rem;
+}
+
+
+.title{
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.title a > img{
+    max-width: 3rem;
+    border: 1px solid rgba(114, 114, 114, 0.623);
+    border-radius: 0.3rem;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.searchbar > i{
+    margin-right: 0.4rem;
+}
+
+.searchbar > input{
+    border-radius: 0.5rem;
+    background: rgb(243, 243, 243);
+    height: 1.7rem;
+    font-family: 'Mulish', 'Space Grotesk', sans-serif;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.699);
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
+.searchbar > input:focus{
+    outline: none;
+}
+
+.icons > a{
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    margin: 0 0.4rem 0 0.4rem;
+}
+
+.icons > a:focus{
+    color: rgb(39, 39, 39);
+}
+
+.all{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    
+}
+
+main{
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post{
+    max-width: 37.5rem;
+    margin: 0 auto;
+    margin-left: 1rem !important;
+    border: 1px solid rgba(97, 97, 97, 0.699);
+    border-radius: 0.4rem;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    margin-right: 1.5rem !important;
+    margin-bottom: 1.3rem !important;
+}
+
+.imgpost{
+    position: relative;
+    border-radius: 0.4rem;
+}
+
+.imgpost > img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+
+}
+
+.containerlike{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.4rem;
+    max-height: 2rem;
+    align-self: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.falike{
+    
+    font-size: xx-large;
+    margin: 0.4rem;
+    transition: 0.4s;
+}
+.faslike{
+    color: #b92525;
+}
+
+.falike:hover {color: #b92525;}
+
+
+
+.fa-paper-plane{
+    color: black;
+    font-size: xx-large;
+    margin: 0.4rem;
+}
+
+.facomment{
+    color: black;
+    font-size: xx-large;
+    margin: 0.4rem;
+}
+
+.navpost{
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    background-color: #e0e0e0;
+}
+
+.navpost > img{
+    max-width: 2rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.commentpost{
+    padding-left: 0.6rem;
+}
+
+.profilebox{
+    max-width: 20rem;
+    margin-left: 1rem;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    border: rgba(70, 69, 69, 0.87);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    }
+
+
+.profileplaceholder > p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.profileplaceholder{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profileplaceholder > img{
+    max-width: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.mypostbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (max-width: 979px) {
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.icons{
+    font-size: 0.4rem;
+    
+}
+
+.icons a {
+    font-size: smaller;
+    margin: 0 0.1rem 0 0.1rem;
+}
+
+.title a > img{
+    max-width: 2rem;
+}
+
+.searchbar > input{
+    max-width: 6rem;
+    margin: 0.2rem;
+}
+}
