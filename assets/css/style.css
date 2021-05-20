@@ -124,7 +124,7 @@ main{
     border-radius: 0.7rem;
     padding: 0.7rem 0.6rem 0.6rem 0.6rem;
     vertical-align: middle;
-    width: 37.5rem;
+    min-width: 33.5rem;
     margin: 0 auto;
     margin-bottom: 1rem !important;
     background: #e0e0e0;
@@ -143,14 +143,26 @@ main{
     flex: none;
 }
 
+.imgstory{
+    display: flex;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 40%;
+    box-shadow: 10px 10px 60px #bebebe,
+    -10px -10px 60px #ffffff;;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
 .imgstory > img{
-    max-width: 3.5rem;
-    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 40%;
     margin: 0 auto;
     margin-top: 0.2rem !important;
     display: flex;
     align-items: center;
-    align-self: center;
     justify-content: center;
     cursor: pointer;
 }
@@ -178,6 +190,8 @@ main{
     vertical-align: middle;
     cursor: pointer;
 }
+
+
 
 .falike{
     
@@ -262,7 +276,7 @@ main{
     text-align: center;
 }
 
-@media all and (max-width: 979px) {
+@media all and (max-width: 759px) {
 .all{
     display: flex;
     flex-wrap: wrap;
@@ -293,12 +307,16 @@ main{
 }
 
 .storiesbox{
-    max-width: 57vh;
+    min-width: 10rem;
+    max-width: 56vh;
     height: 10rem;
 }
 
 
 }
+
+
+
 
 @media (prefers-color-scheme: dark) {
     
@@ -319,6 +337,10 @@ main{
     img {
         filter: brightness(0.9);
 }
+    .imgstory{
+        box-shadow:  20px 20px 30px #090909,
+                -20px -20px 30px #1f1f1f;
+    }
 
     nav, .post, .profilebox, .title a > img{
         background: #141414;
