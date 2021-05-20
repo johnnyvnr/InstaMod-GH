@@ -11,7 +11,7 @@ nav{
     display: flex;
     justify-content: space-between;
     min-width: 20rem;
-    max-width: 60rem;
+    max-width: 100vh;
     border: 1px solid rgba(97, 97, 97, 0.699);
     border-radius: 0 0 0.3rem 0.3rem;
     align-items: center;
@@ -277,12 +277,20 @@ main{
     text-align: center;
 }
 
-@media all and (max-width: 759px) {
-.all{
+@media all and (max-width: 425px) {
+body{
+    margin: 0 auto;
+}
+
+    .all{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0 auto;
+}
+
+nav{
+    max-width: 100vh;
 }
 
 .icons{
@@ -309,12 +317,63 @@ main{
 
 .storiesbox{
     min-width: 10rem;
-    max-width: 56vh;
-    height: 10rem;
+    max-width: 17.5rem;
+    height: 15rem;
 }
 
 
 }
+
+@media all and (min-width: 426px ) and (max-width: 851px) {
+    body{
+        margin: 0 auto;
+    }
+
+    .all{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    nav{
+        max-width: 100vh;
+    }
+    
+    .icons{
+        font-size: 0.4rem;
+        
+    }
+    
+    .icons a {
+        font-size: smaller;
+        margin: 0 0.1rem 0 0.1rem;
+    }
+    
+    .title a > img{
+        max-width: 2rem;
+    }
+    
+    .searchbar > input{
+        max-width: 6rem;
+        margin: 0.2rem;
+    }
+    .profilebox{
+        width: 37.5rem;
+    }
+    
+    .storiesbox{
+        min-width: 10rem;
+        max-width: 36.5rem;
+        height: 7rem;
+    }
+
+    main{
+        margin: 0 auto;
+    }
+    
+    
+    }
 
 
 
