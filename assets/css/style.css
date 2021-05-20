@@ -76,6 +76,7 @@ nav > img {
     display: flex;
     align-self: center;
     justify-content: center;
+    margin: 0 auto;
     
 }
 
@@ -89,7 +90,7 @@ main{
     max-width: 37.5rem;
     margin: 0 auto;
     margin-left: 1rem !important;
-    border: 1px solid rgba(97, 97, 97, 0.699);
+    border: 1px solid rgba(145, 144, 144, 0.452);
     border-radius: 0.4rem;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
@@ -114,24 +115,32 @@ main{
 .storiesbox{
     border: 1px solid rgba(116, 116, 116, 0.658);
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space:nowrap;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     border-radius: 0.7rem;
     padding: 0.7rem 0.6rem 0.6rem 0.6rem;
     vertical-align: middle;
-    max-width: 37.5rem;
+    width: 37.5rem;
     margin: 0 auto;
     margin-bottom: 1rem !important;
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
+
 }
 
 .box1{
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     margin: 0 0.4rem;
+    
+}
+
+.storiesbox > .box1{
+    flex: none;
 }
 
 .imgstory > img{
@@ -253,7 +262,7 @@ main{
     text-align: center;
 }
 
-@media only screen and (max-width: 979px) {
+@media all and (max-width: 979px) {
 .all{
     display: flex;
     flex-wrap: wrap;
@@ -282,6 +291,13 @@ main{
 .profilebox{
     width: 37.5rem;
 }
+
+.storiesbox{
+    max-width: 61vh;
+    height: 11rem;
+}
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -346,4 +362,5 @@ main{
     .fa-arrow-alt-circle-right{
         color: #bebebe;
     }
+
 }
