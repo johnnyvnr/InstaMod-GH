@@ -10,7 +10,8 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    max-width: 70rem;
+    min-width: 20rem;
+    max-width: 60rem;
     border: 1px solid rgba(97, 97, 97, 0.699);
     border-radius: 0 0 0.3rem 0.3rem;
     align-items: center;
