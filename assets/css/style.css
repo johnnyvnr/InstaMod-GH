@@ -209,6 +209,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .icons{
@@ -230,6 +231,53 @@ main{
     margin: 0.2rem;
 }
 .profilebox{
-    max-width: 37.5rem;
+    width: 37.5rem;
 }
+}
+
+@media (prefers-color-scheme: dark) {
+    
+    body {
+      background: #141414; 
+      color: #f0ece2;
+}    
+
+    .titlenav, .post, .navpost, .commentpost{
+        background: #141414; 
+        color: #f0ece2; 
+    }
+
+    .searchbar > input{
+        background: #bebebe;
+    }
+
+    img {
+        filter: brightness(0.9);
+}
+
+    nav, .post, .profilebox, .title a > img{
+        background: #141414;
+        box-shadow:  20px 20px 30px #090909,
+                -20px -20px 30px #1f1f1f;
+    }
+    .title{
+        border: none;
+        text-decoration: none;
+    }
+
+    .icons > a{
+        color: #bebebe;
+    }
+    
+    .icons > a:focus{
+        color: #f0ece2;
+    }
+
+    .fa-paper-plane{
+        color: #f0ece2;
+    }
+    
+    .facomment{
+        color: #f0ece2;
+    }
 }
