@@ -347,7 +347,8 @@ nav{
 .storiesbox{
     min-width: 10rem;
     max-width: 17.5rem;
-    height: 15rem;
+    min-height: 6rem;
+    max-height: 15rem;
 }
 
 
@@ -397,6 +398,7 @@ nav{
         min-width: 10rem;
         max-width: 17.5rem;
         height: 6rem;
+        margin-left: 1rem;
     }
     
     
@@ -446,6 +448,7 @@ nav{
         min-width: 10rem;
         max-width: 36.5rem;
         height: 7rem;
+
     }
 
     main{
