@@ -5,6 +5,7 @@ body{
     margin: 0 auto;
     font-family: 'Mulish', 'Space Grotesk', sans-serif;
     background-color: rgb(241, 241, 241);
+    overflow-x: hidden;
 }
 
 nav{
@@ -396,7 +397,7 @@ nav{
     
     .storiesbox{
         min-width: 10rem;
-        max-width: 17.5rem;
+        max-width: 20.5rem;
         height: 6rem;
         margin-left: 1rem;
     }
