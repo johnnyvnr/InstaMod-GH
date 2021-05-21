@@ -22,8 +22,8 @@ nav{
     background: #e0e0e0;
     box-shadow:  20px 20px 30px #bebebe,
              -20px -20px 60px #ffffff;
-
 }
+
 nav > img {
     max-width: 2rem;
     margin-left: 0.4rem;
@@ -39,7 +39,7 @@ nav > img {
 .title a > img{
     max-width: 3rem;
     border: 1px solid rgba(114, 114, 114, 0.623);
-    border-radius: 0.3rem;
+    border-radius: 0.7rem;
     box-shadow:  20px 20px 60px #bebebe,
     -20px -20px 60px #ffffff;
 }
@@ -154,6 +154,7 @@ main{
     align-items: center;
     justify-content: center;
     vertical-align: middle;
+    outline: -webkit-linear-gradient(45deg, rgb(230, 3, 3) 0%, rgb(133, 1, 160) 60%);
 }
 
 .imgstory > img{
@@ -166,6 +167,13 @@ main{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.outline-border { 
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(179.98deg, rgba(104, 213, 255, 1) 0.12%, rgba(45, 179, 222, 1) 14.53%, #467EE3 99.88%);
+
 }
 
 .namestory{
@@ -243,6 +251,7 @@ main{
     display: flex;
     align-self: flex-start;
     flex-direction: column;
+    text-align: center;
     border: rgba(70, 69, 69, 0.87);
     border-radius: 1rem;
     padding: 0.8rem;
@@ -250,6 +259,19 @@ main{
              -20px -20px 60px #ffffff;
     }
 
+.hashtagsbox{
+    max-width: 20rem;
+    margin-left: 1rem;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    text-align: center;
+    border: rgba(70, 69, 69, 0.87);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
 
 .profileplaceholder > p{
     display: flex;
@@ -277,9 +299,17 @@ main{
     text-align: center;
 }
 
+.hashtagsbox > p > strong{
+    background: -webkit-linear-gradient(45deg, rgb(230, 3, 3) 0%, rgb(133, 1, 160) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media all and (max-width: 425px) {
 body{
+    overflow-x: hidden;
     margin: 0 auto;
+    -webkit-overflow-scrolling: touch;
 }
 
     .all{
@@ -326,6 +356,8 @@ nav{
 
 @media all and (min-width: 426px ) and (max-width: 851px) {
     body{
+        overflow-x: none;
+        -webkit-overflow-scrolling: touch;
         margin: 0 auto;
     }
 
@@ -402,7 +434,7 @@ nav{
                 -20px -20px 30px #1f1f1f;
     }
 
-    nav, .post, .profilebox, .title a > img{
+    nav, .post, .profilebox, .hashtagsbox, .title a > img{
         background: #141414;
         box-shadow:  20px 20px 30px #090909,
                 -20px -20px 30px #1f1f1f;
