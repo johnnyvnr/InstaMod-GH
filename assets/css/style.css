@@ -298,13 +298,13 @@ main{
     text-align: center;
 }
 
-.hashtagsbox > p > strong{
+.profilebox > p > strong, .hashtagsbox > p > strong{
     background: -webkit-linear-gradient(45deg, rgb(230, 3, 3) 0%, rgb(133, 1, 160) 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 344px) {
 body{
     overflow-x: hidden;
     margin: 0 auto;
@@ -352,6 +352,55 @@ nav{
 
 
 }
+
+@media all and (min-width: 345px) and (max-width: 425px) {
+    body{
+        overflow-x: hidden;
+        margin: 0 auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+        .all{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    nav{
+        max-width: 100vh;
+    }
+    
+    .icons{
+        font-size: 0.4rem;
+        
+    }
+    
+    .icons a {
+        font-size: smaller;
+        margin: 0 0.1rem 0 0.1rem;
+    }
+    
+    .title a > img{
+        max-width: 2rem;
+    }
+    
+    .searchbar > input{
+        max-width: 6rem;
+        margin: 0.2rem;
+    }
+    .profilebox{
+        width: 37.5rem;
+    }
+    
+    .storiesbox{
+        min-width: 10rem;
+        max-width: 17.5rem;
+        height: 6rem;
+    }
+    
+    
+    }
 
 @media all and (min-width: 426px ) and (max-width: 851px) {
     body{
