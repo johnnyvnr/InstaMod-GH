@@ -34,12 +34,13 @@ nav > img {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
+    
 }
+
 
 .title a > img{
     max-width: 3rem;
-    border: 1px solid rgba(114, 114, 114, 0.623);
-    border-radius: 0.7rem;
+    border-radius: 1rem;
     box-shadow:  20px 20px 60px #bebebe,
     -20px -20px 60px #ffffff;
 }
@@ -166,15 +167,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
     cursor: pointer;
 }
 
-.outline-border { 
-    border-width: 1px;
-    border-style: solid;
-    border-image: linear-gradient(179.98deg, rgba(104, 213, 255, 1) 0.12%, rgba(45, 179, 222, 1) 14.53%, #467EE3 99.88%);
 
-}
 
 .namestory{
     margin: 0 auto;
@@ -271,6 +268,7 @@ main{
     padding: 0.8rem;
     box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
+    cursor: pointer;
 }
 
 .profileplaceholder > p{
