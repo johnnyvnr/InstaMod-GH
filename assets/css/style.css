@@ -343,6 +343,7 @@ nav{
 }
 .profilebox{
     width: 37.5rem;
+    margin-top: 2rem;
 }
 
 .storiesbox{
@@ -393,6 +394,7 @@ nav{
     }
     .profilebox{
         width: 37.5rem;
+        margin-top: 2rem;
     }
     
     .storiesbox{
@@ -410,6 +412,7 @@ nav{
         overflow-x: none;
         -webkit-overflow-scrolling: touch;
         margin: 0 auto;
+        width: fit-content;
     }
 
     .all{
@@ -443,6 +446,7 @@ nav{
     }
     .profilebox{
         width: 37.5rem;
+        margin-top: 2rem;
     }
     
     .storiesbox{
